@@ -39,7 +39,7 @@ public class PasswordTest {
     public void givenPasswordAsVar_ShouldReturnTrueOrFalse() {
         try {
             UserRegistration userRegistration = new UserRegistration(passwordTest);
-            userRegistration.validatePassword(passwordTest);
+            userRegistration.passwordValidate.userEntries(passwordTest);
         } catch (InvalidUserInputException e) {
             Assert.assertEquals(InvalidUserInputException.ExceptionType.INVALID_PASSWORD, e.type);
         }

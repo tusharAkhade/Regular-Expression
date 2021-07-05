@@ -53,7 +53,7 @@ public class EmailTest {
     public void givenEmailAsVar_ShouldReturnTrueOrFalse() {
         try {
             UserRegistration userRegistration = new UserRegistration(emailTest);
-            userRegistration.validateEmail(emailTest);
+            userRegistration.emailValidate.userEntries(emailTest);
         } catch (InvalidUserInputException e) {
             Assert.assertEquals(InvalidUserInputException.ExceptionType.INVALID_EMAIL, e.type);
         }

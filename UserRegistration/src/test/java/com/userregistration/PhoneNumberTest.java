@@ -37,7 +37,7 @@ public class PhoneNumberTest {
     public void givenPhoneNumberAsVar_ShouldReturnTrueOrFalse() {
         try {
             UserRegistration userRegistration = new UserRegistration(phoneNumTest);
-            userRegistration.validatePhoneNumber(phoneNumTest);
+            userRegistration.phoneNumberValidate.userEntries(phoneNumTest);
         } catch (InvalidUserInputException e) {
             Assert.assertEquals(InvalidUserInputException.ExceptionType.INVALID_PHONE_NUMBER, e.type);
         }

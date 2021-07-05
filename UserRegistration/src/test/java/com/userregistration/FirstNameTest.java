@@ -35,7 +35,7 @@ public class FirstNameTest {
     public void givenFirstNameAsVar_ShouldReturnTrueOrFalse() {
         try {
             UserRegistration userRegistration = new UserRegistration(firstNameTest);
-            userRegistration.validateFirstName(firstNameTest);
+            userRegistration.firstNameValidate.userEntries(firstNameTest);
         } catch (InvalidUserInputException e) {
             Assert.assertEquals(InvalidUserInputException.ExceptionType.INVALID_FIRST_NAME, e.type);
         }
